@@ -7,7 +7,7 @@ namespace POSCafeteria.DAL
 {
     public static class ConexionDB
     {
-        public static string CadenaConexion = "Server=HIDALGOLAPTOP;Database=POS_Cafeteria;Trusted_Connection=True;TrustServerCertificate=True;";
+        public static string CadenaConexion = "Server=ELMK;Database=Inventario_Printzone;Trusted_Connection=True;TrustServerCertificate=True;";
         public static SqlConnection ObtenerConexion()
         {
             return new SqlConnection(CadenaConexion);

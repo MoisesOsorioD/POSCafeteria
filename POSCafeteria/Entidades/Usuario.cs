@@ -6,13 +6,12 @@ namespace POSCafeteria.Entidades
 {
     public class Usuario
     {
-        public int IdUsuario { get; set; }
-        public string NombreUsuario { get; set; } = string.Empty;
-        public string NombreCompleto { get; set; } = string.Empty;
-        public string Clave { get; set; } = string.Empty;
-        public string Email { get; set; } = string.Empty;
-        public string Rol { get; set; } = string.Empty;
-        public bool Activo { get; set; }
+        public int id_usuario { get; set; }
+        public string nombre_usuario { get; set; } = string.Empty;
+        public string nombre_completo { get; set; } = string.Empty;
+        public string clave { get; set; } = string.Empty;
+        public string rol { get; set; } = string.Empty;
+        public bool activo { get; set; }
         public DateTime FechaCreacion { get; set; }
     }
 }

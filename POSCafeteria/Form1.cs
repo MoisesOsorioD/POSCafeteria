@@ -19,7 +19,7 @@ namespace POSCafeteria
 
                 if (user != null)
                 {
-                    MessageBox.Show($"Bienvenido {user.NombreCompleto} ({user.Rol})", "Acceso concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Bienvenido {user.nombre_completo} ({user.rol})", "Acceso concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     // Abrimos el formulario del menú principal y enviamos el usuario
                     FormPrincipal frmPrincipal = new FormPrincipal(user, this);
                     txtUsuario.Clear();

@@ -22,9 +22,9 @@ namespace POSCafeteria
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
-            lblBienvenido.Text = $"¡Bienvenido(a), {_usuarioSesion.NombreCompleto}!";
-            lblUsuario.Text = _usuarioSesion.NombreUsuario;
-            lblRol.Text = _usuarioSesion.Rol;
+            lblBienvenido.Text = $"¡Bienvenido(a), {_usuarioSesion.nombre_completo}!";
+            lblUsuario.Text = _usuarioSesion.nombre_usuario;
+            lblRol.Text = _usuarioSesion.rol;
             lblFecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
 

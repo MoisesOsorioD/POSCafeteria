@@ -72,13 +72,12 @@ namespace POSCafeteria
             {
                 Usuario nuevoUsuario = new Usuario
                 {
-                    IdUsuario = _idUsuarioSeleccionado, // Si es 0 inserta, si tiene número actualiza
-                    NombreUsuario = txtNombreUsuario.Text,
-                    NombreCompleto = txtNombreCompleto.Text,
-                    Clave = txtClave.Text,
-                    Email = txtEmail.Text,
-                    Rol = cmbRol.Text,
-                    Activo = chkActivo.Checked
+                    id_usuario = _idUsuarioSeleccionado, // Si es 0 inserta, si tiene número actualiza
+                    nombre_usuario = txtNombreUsuario.Text,
+                    nombre_completo = txtNombreCompleto.Text,
+                    clave = txtClave.Text,
+                    rol = cmbRol.Text,
+                    activo = chkActivo.Checked
                 };
                 bool exito = _usuarioBLL.GuardarUsuario(nuevoUsuario);
 
